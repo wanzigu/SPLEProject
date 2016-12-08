@@ -7,10 +7,10 @@ import javax.swing.JLabel;
 import javax.swing.JTextField;
 import javax.swing.JPanel;
 import javax.swing.JButton;
+import javax.swing.JTabbedPane;
 import java.awt.GridBagLayout;
 import java.awt.FlowLayout;
 import java.awt.GridBagConstraints;
-import java.awt.GridLayout;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.awt.Dimension;
@@ -45,6 +45,10 @@ public class UserInterface {
   private JPanel proxyPanel;
   private JPanel auproPanel;
 
+  private JTabbedPane tabbedPane;
+  private JPanel manipulate;
+  private JPanel search;
+  private JPanel getDocument;
 
   private GridBagLayout g;
   private FlowLayout f;
@@ -60,18 +64,19 @@ public class UserInterface {
 
   private void prepareGUI() {
     mainFrame = new JFrame("Jest Client");
-    mainFrame.setSize(510, 700);
-    mainFrame.setLayout(new GridLayout(4, 1, 1, 1));
+    mainFrame.setSize(550, 500);
+    tabbedPane = new JTabbedPane();
     mainFrame.addWindowListener(new WindowAdapter() {
       public void windowClosing(WindowEvent windowEvent) {
         System.exit(0);
       }
     });
 
-    // index panel 
-    indexPanel = new JPanel();
     g = new GridBagLayout();
     c = new GridBagConstraints();
+
+    // index panel 
+    indexPanel = new JPanel();
 
     indexPanel.setLayout(g);
     indexLabel = new JLabel("Index");
@@ -181,10 +186,36 @@ public class UserInterface {
     c.gridy = 0;
     auproPanel.add(proxyPanel, c);
 
-    mainFrame.add(indexPanel);
-    mainFrame.add(jsonPanel);
-    mainFrame.add(logPanel);
-    mainFrame.add(auproPanel);
+    // the grand manipulate panel with everything 
+    manipulate = new JPanel(g);
+
+    c.gridx = 0;
+    c.gridy = 0;
+    manipulate.add(indexPanel, c);
+    c.gridx = 0;
+    c.gridy = 1;
+    manipulate.add(jsonPanel, c);
+    c.gridx = 0;
+    c.gridy = 2;
+    manipulate.add(logPanel, c);
+    c.gridx = 0;
+    c.gridy = 3;
+    manipulate.add(auproPanel, c);
+
+    tabbedPane.add("Manipulate", manipulate);
+
+    // search panel 
+    search = new JPanel(g);
+    c.gridx = 0;
+    c.gridy = 0;
+    search.add(indexPanel, c);
+    c.gridx = 0;
+    c.gridy = 1;
+    search.add(jsonPanel, c);
+
+    tabbedPane.add("Search", search);
+
+    mainFrame.add(tabbedPane);
     mainFrame.setVisible(true);
 
   }

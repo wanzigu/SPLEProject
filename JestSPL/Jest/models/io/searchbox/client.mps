@@ -356,6 +356,13 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
+      </concept>
     </language>
     <language id="42727bc4-0771-4379-872f-090530265ce4" name="de.htwsaar.peopl.core.moduleConfig">
       <concept id="8595675693488599338" name="de.htwsaar.peopl.core.moduleConfig.structure.ConfigurationLink" flags="ng" index="H$gyE">
@@ -7627,7 +7634,47 @@
         </node>
       </node>
       <node concept="2tJIrI" id="2yPl3bsRCOK" role="jymVt" />
-      <node concept="2tJIrI" id="2yPl3bsRvIZ" role="jymVt" />
+      <node concept="312cEg" id="2yPl3bsUo88" role="jymVt">
+        <property role="34CwA1" value="false" />
+        <property role="eg7rD" value="false" />
+        <property role="TrG5h" value="tabbedPane" />
+        <property role="3TUv4t" value="false" />
+        <node concept="3Tm6S6" id="2yPl3bsUmII" role="1B3o_S" />
+        <node concept="3uibUv" id="2yPl3bsUnRv" role="1tU5fm">
+          <ref role="3uigEE" to="dxuu:~JTabbedPane" resolve="JTabbedPane" />
+        </node>
+      </node>
+      <node concept="312cEg" id="2yPl3bsULE0" role="jymVt">
+        <property role="34CwA1" value="false" />
+        <property role="eg7rD" value="false" />
+        <property role="TrG5h" value="manipulate" />
+        <property role="3TUv4t" value="false" />
+        <node concept="3Tm6S6" id="2yPl3bsUKxe" role="1B3o_S" />
+        <node concept="3uibUv" id="2yPl3bsULDN" role="1tU5fm">
+          <ref role="3uigEE" to="dxuu:~JPanel" resolve="JPanel" />
+        </node>
+      </node>
+      <node concept="312cEg" id="2yPl3bsUOIJ" role="jymVt">
+        <property role="34CwA1" value="false" />
+        <property role="eg7rD" value="false" />
+        <property role="TrG5h" value="search" />
+        <property role="3TUv4t" value="false" />
+        <node concept="3Tm6S6" id="2yPl3bsUN_D" role="1B3o_S" />
+        <node concept="3uibUv" id="2yPl3bsUOIp" role="1tU5fm">
+          <ref role="3uigEE" to="dxuu:~JPanel" resolve="JPanel" />
+        </node>
+      </node>
+      <node concept="312cEg" id="2yPl3bsURQj" role="jymVt">
+        <property role="34CwA1" value="false" />
+        <property role="eg7rD" value="false" />
+        <property role="TrG5h" value="getDocument" />
+        <property role="3TUv4t" value="false" />
+        <node concept="3Tm6S6" id="2yPl3bsUQHh" role="1B3o_S" />
+        <node concept="3uibUv" id="2yPl3bsURPW" role="1tU5fm">
+          <ref role="3uigEE" to="dxuu:~JPanel" resolve="JPanel" />
+        </node>
+      </node>
+      <node concept="2tJIrI" id="2yPl3bsUSOL" role="jymVt" />
       <node concept="312cEg" id="2yPl3bsuz_G" role="jymVt">
         <property role="34CwA1" value="false" />
         <property role="eg7rD" value="false" />
@@ -7770,35 +7817,68 @@
                   <node concept="liA8E" id="StQ5Vv$PZ" role="2OqNvi">
                     <ref role="37wK5l" to="z60i:~Window.setSize(int,int):void" resolve="setSize" />
                     <node concept="3cmrfG" id="StQ5Vv$Uc" role="37wK5m">
-                      <property role="3cmrfH" value="510" />
+                      <property role="3cmrfH" value="550" />
                     </node>
                     <node concept="3cmrfG" id="StQ5VvAgz" role="37wK5m">
-                      <property role="3cmrfH" value="700" />
+                      <property role="3cmrfH" value="500" />
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="3clFbF" id="StQ5VvApz" role="3cqZAp">
-                <node concept="2OqwBi" id="StQ5VvAwb" role="3clFbG">
-                  <node concept="37vLTw" id="StQ5VvApx" role="2Oq$k0">
-                    <ref role="3cqZAo" node="StQ5VvfJJ" resolve="mainFrame" />
+              <node concept="3clFbF" id="2yPl3bsUqV7" role="3cqZAp">
+                <node concept="37vLTI" id="2yPl3bsUrT5" role="3clFbG">
+                  <node concept="2ShNRf" id="2yPl3bsUslF" role="37vLTx">
+                    <node concept="1pGfFk" id="2yPl3bsUtuw" role="2ShVmc">
+                      <ref role="37wK5l" to="dxuu:~JTabbedPane.&lt;init&gt;()" resolve="JTabbedPane" />
+                    </node>
                   </node>
-                  <node concept="liA8E" id="StQ5VvB1Z" role="2OqNvi">
-                    <ref role="37wK5l" to="dxuu:~JFrame.setLayout(java.awt.LayoutManager):void" resolve="setLayout" />
-                    <node concept="2ShNRf" id="StQ5VvB61" role="37wK5m">
-                      <node concept="1pGfFk" id="2yPl3bsRnuR" role="2ShVmc">
-                        <ref role="37wK5l" to="z60i:~GridLayout.&lt;init&gt;(int,int,int,int)" resolve="GridLayout" />
-                        <node concept="3cmrfG" id="2yPl3bsRn$Y" role="37wK5m">
-                          <property role="3cmrfH" value="4" />
-                        </node>
-                        <node concept="3cmrfG" id="2yPl3bsRnF8" role="37wK5m">
-                          <property role="3cmrfH" value="1" />
-                        </node>
-                        <node concept="3cmrfG" id="2yPl3bsUlI9" role="37wK5m">
-                          <property role="3cmrfH" value="1" />
-                        </node>
-                        <node concept="3cmrfG" id="2yPl3bsUlPN" role="37wK5m">
-                          <property role="3cmrfH" value="1" />
+                  <node concept="37vLTw" id="2yPl3bsUqV5" role="37vLTJ">
+                    <ref role="3cqZAo" node="2yPl3bsUo88" resolve="tabbedPane" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1X3_iC" id="2yPl3bsVp3b" role="lGtFl">
+                <property role="3V$3am" value="statement" />
+                <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                <node concept="3clFbF" id="2yPl3bsUuvg" role="8Wnug">
+                  <node concept="2OqwBi" id="2yPl3bsUvtz" role="3clFbG">
+                    <node concept="37vLTw" id="2yPl3bsUuve" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2yPl3bsUo88" resolve="tabbedPane" />
+                    </node>
+                    <node concept="liA8E" id="2yPl3bsUwnO" role="2OqNvi">
+                      <ref role="37wK5l" to="z60i:~Container.setLayout(java.awt.LayoutManager):void" resolve="setLayout" />
+                      <node concept="37vLTw" id="2yPl3bsVh9C" role="37wK5m">
+                        <ref role="3cqZAo" node="2yPl3bsuz_G" resolve="g" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="1X3_iC" id="2yPl3bsUybs" role="lGtFl">
+                <property role="3V$3am" value="statement" />
+                <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                <node concept="3clFbF" id="StQ5VvApz" role="8Wnug">
+                  <node concept="2OqwBi" id="StQ5VvAwb" role="3clFbG">
+                    <node concept="37vLTw" id="StQ5VvApx" role="2Oq$k0">
+                      <ref role="3cqZAo" node="StQ5VvfJJ" resolve="mainFrame" />
+                    </node>
+                    <node concept="liA8E" id="StQ5VvB1Z" role="2OqNvi">
+                      <ref role="37wK5l" to="dxuu:~JFrame.setLayout(java.awt.LayoutManager):void" resolve="setLayout" />
+                      <node concept="2ShNRf" id="StQ5VvB61" role="37wK5m">
+                        <node concept="1pGfFk" id="2yPl3bsRnuR" role="2ShVmc">
+                          <ref role="37wK5l" to="z60i:~GridLayout.&lt;init&gt;(int,int,int,int)" resolve="GridLayout" />
+                          <node concept="3cmrfG" id="2yPl3bsRn$Y" role="37wK5m">
+                            <property role="3cmrfH" value="4" />
+                          </node>
+                          <node concept="3cmrfG" id="2yPl3bsRnF8" role="37wK5m">
+                            <property role="3cmrfH" value="1" />
+                          </node>
+                          <node concept="3cmrfG" id="2yPl3bsUlI9" role="37wK5m">
+                            <property role="3cmrfH" value="1" />
+                          </node>
+                          <node concept="3cmrfG" id="2yPl3bsUlPN" role="37wK5m">
+                            <property role="3cmrfH" value="1" />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -7852,23 +7932,6 @@
                 </node>
               </node>
               <node concept="3clFbH" id="2yPl3bsuAY2" role="3cqZAp" />
-              <node concept="3SKdUt" id="2yPl3bsPK1s" role="3cqZAp">
-                <node concept="3SKdUq" id="2yPl3bsPK1u" role="3SKWNk">
-                  <property role="3SKdUp" value="index panel" />
-                </node>
-              </node>
-              <node concept="3clFbF" id="StQ5VvR2S" role="3cqZAp">
-                <node concept="37vLTI" id="StQ5VvRq_" role="3clFbG">
-                  <node concept="2ShNRf" id="StQ5VvRBs" role="37vLTx">
-                    <node concept="1pGfFk" id="StQ5VvR_y" role="2ShVmc">
-                      <ref role="37wK5l" to="dxuu:~JPanel.&lt;init&gt;()" resolve="JPanel" />
-                    </node>
-                  </node>
-                  <node concept="37vLTw" id="StQ5VvR2Q" role="37vLTJ">
-                    <ref role="3cqZAo" node="StQ5VvmUk" resolve="indexPanel" />
-                  </node>
-                </node>
-              </node>
               <node concept="3clFbF" id="2yPl3bsUi36" role="3cqZAp">
                 <node concept="37vLTI" id="2yPl3bsUiU0" role="3clFbG">
                   <node concept="2ShNRf" id="2yPl3bsUjnj" role="37vLTx">
@@ -7890,6 +7953,24 @@
                     <node concept="1pGfFk" id="2yPl3bsvYVu" role="2ShVmc">
                       <ref role="37wK5l" to="z60i:~GridBagConstraints.&lt;init&gt;()" resolve="GridBagConstraints" />
                     </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbH" id="2yPl3bsVqYU" role="3cqZAp" />
+              <node concept="3SKdUt" id="2yPl3bsPK1s" role="3cqZAp">
+                <node concept="3SKdUq" id="2yPl3bsPK1u" role="3SKWNk">
+                  <property role="3SKdUp" value="index panel" />
+                </node>
+              </node>
+              <node concept="3clFbF" id="StQ5VvR2S" role="3cqZAp">
+                <node concept="37vLTI" id="StQ5VvRq_" role="3clFbG">
+                  <node concept="2ShNRf" id="StQ5VvRBs" role="37vLTx">
+                    <node concept="1pGfFk" id="StQ5VvR_y" role="2ShVmc">
+                      <ref role="37wK5l" to="dxuu:~JPanel.&lt;init&gt;()" resolve="JPanel" />
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="StQ5VvR2Q" role="37vLTJ">
+                    <ref role="3cqZAo" node="StQ5VvmUk" resolve="indexPanel" />
                   </node>
                 </node>
               </node>
@@ -9164,6 +9245,379 @@
                 </node>
               </node>
               <node concept="3clFbH" id="2yPl3bsTjHa" role="3cqZAp" />
+              <node concept="3SKdUt" id="2yPl3bsUWIV" role="3cqZAp">
+                <node concept="3SKdUq" id="2yPl3bsUWIX" role="3SKWNk">
+                  <property role="3SKdUp" value="the grand manipulate panel with everything" />
+                </node>
+              </node>
+              <node concept="3clFbF" id="2yPl3bsUYM8" role="3cqZAp">
+                <node concept="37vLTI" id="2yPl3bsUZM3" role="3clFbG">
+                  <node concept="2ShNRf" id="2yPl3bsV0g8" role="37vLTx">
+                    <node concept="1pGfFk" id="2yPl3bsV1o6" role="2ShVmc">
+                      <ref role="37wK5l" to="dxuu:~JPanel.&lt;init&gt;(java.awt.LayoutManager)" resolve="JPanel" />
+                      <node concept="37vLTw" id="2yPl3bsV1tC" role="37wK5m">
+                        <ref role="3cqZAo" node="2yPl3bsuz_G" resolve="g" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="2yPl3bsUYM6" role="37vLTJ">
+                    <ref role="3cqZAo" node="2yPl3bsULE0" resolve="manipulate" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbH" id="2yPl3bsV1wv" role="3cqZAp" />
+              <node concept="3clFbF" id="2yPl3bsV3lb" role="3cqZAp">
+                <node concept="37vLTI" id="2yPl3bsV3lc" role="3clFbG">
+                  <node concept="3cmrfG" id="2yPl3bsV3ld" role="37vLTx">
+                    <property role="3cmrfH" value="0" />
+                  </node>
+                  <node concept="2OqwBi" id="2yPl3bsV3le" role="37vLTJ">
+                    <node concept="37vLTw" id="2yPl3bsV3lf" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2yPl3bsu$sD" resolve="c" />
+                    </node>
+                    <node concept="2OwXpG" id="2yPl3bsV3lg" role="2OqNvi">
+                      <ref role="2Oxat5" to="z60i:~GridBagConstraints.gridx" resolve="gridx" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="2yPl3bsV3lh" role="3cqZAp">
+                <node concept="37vLTI" id="2yPl3bsV3li" role="3clFbG">
+                  <node concept="2OqwBi" id="2yPl3bsV3lj" role="37vLTJ">
+                    <node concept="37vLTw" id="2yPl3bsV3lk" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2yPl3bsu$sD" resolve="c" />
+                    </node>
+                    <node concept="2OwXpG" id="2yPl3bsV3ll" role="2OqNvi">
+                      <ref role="2Oxat5" to="z60i:~GridBagConstraints.gridy" resolve="gridy" />
+                    </node>
+                  </node>
+                  <node concept="3cmrfG" id="2yPl3bsV3lm" role="37vLTx">
+                    <property role="3cmrfH" value="0" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="2yPl3bsV3ln" role="3cqZAp">
+                <node concept="2OqwBi" id="2yPl3bsV3lo" role="3clFbG">
+                  <node concept="37vLTw" id="2yPl3bsV4qM" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2yPl3bsULE0" resolve="manipulate" />
+                  </node>
+                  <node concept="liA8E" id="2yPl3bsV3lq" role="2OqNvi">
+                    <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component,java.lang.Object):void" resolve="add" />
+                    <node concept="37vLTw" id="2yPl3bsV4MV" role="37wK5m">
+                      <ref role="3cqZAo" node="StQ5VvmUk" resolve="indexPanel" />
+                    </node>
+                    <node concept="37vLTw" id="2yPl3bsV3ls" role="37wK5m">
+                      <ref role="3cqZAo" node="2yPl3bsu$sD" resolve="c" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="2yPl3bsV3lt" role="3cqZAp">
+                <node concept="37vLTI" id="2yPl3bsV3lu" role="3clFbG">
+                  <node concept="2OqwBi" id="2yPl3bsV3lv" role="37vLTJ">
+                    <node concept="37vLTw" id="2yPl3bsV3lw" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2yPl3bsu$sD" resolve="c" />
+                    </node>
+                    <node concept="2OwXpG" id="2yPl3bsV3lx" role="2OqNvi">
+                      <ref role="2Oxat5" to="z60i:~GridBagConstraints.gridx" resolve="gridx" />
+                    </node>
+                  </node>
+                  <node concept="3cmrfG" id="2yPl3bsV4BK" role="37vLTx">
+                    <property role="3cmrfH" value="0" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="2yPl3bsV3lz" role="3cqZAp">
+                <node concept="37vLTI" id="2yPl3bsV3l$" role="3clFbG">
+                  <node concept="2OqwBi" id="2yPl3bsV3l_" role="37vLTJ">
+                    <node concept="37vLTw" id="2yPl3bsV3lA" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2yPl3bsu$sD" resolve="c" />
+                    </node>
+                    <node concept="2OwXpG" id="2yPl3bsV3lB" role="2OqNvi">
+                      <ref role="2Oxat5" to="z60i:~GridBagConstraints.gridy" resolve="gridy" />
+                    </node>
+                  </node>
+                  <node concept="3cmrfG" id="2yPl3bsV4HJ" role="37vLTx">
+                    <property role="3cmrfH" value="1" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="2yPl3bsV3lD" role="3cqZAp">
+                <node concept="2OqwBi" id="2yPl3bsV3lE" role="3clFbG">
+                  <node concept="liA8E" id="2yPl3bsV3lG" role="2OqNvi">
+                    <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component,java.lang.Object):void" resolve="add" />
+                    <node concept="37vLTw" id="2yPl3bsV4TI" role="37wK5m">
+                      <ref role="3cqZAo" node="2yPl3bsPGei" resolve="jsonPanel" />
+                    </node>
+                    <node concept="37vLTw" id="2yPl3bsV3lI" role="37wK5m">
+                      <ref role="3cqZAo" node="2yPl3bsu$sD" resolve="c" />
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="2yPl3bsV4x9" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2yPl3bsULE0" resolve="manipulate" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="2yPl3bsV4Wm" role="3cqZAp">
+                <node concept="37vLTI" id="2yPl3bsV4Wn" role="3clFbG">
+                  <node concept="3cmrfG" id="2yPl3bsV4Wo" role="37vLTx">
+                    <property role="3cmrfH" value="0" />
+                  </node>
+                  <node concept="2OqwBi" id="2yPl3bsV4Wp" role="37vLTJ">
+                    <node concept="37vLTw" id="2yPl3bsV4Wq" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2yPl3bsu$sD" resolve="c" />
+                    </node>
+                    <node concept="2OwXpG" id="2yPl3bsV4Wr" role="2OqNvi">
+                      <ref role="2Oxat5" to="z60i:~GridBagConstraints.gridx" resolve="gridx" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="2yPl3bsV4Ws" role="3cqZAp">
+                <node concept="37vLTI" id="2yPl3bsV4Wt" role="3clFbG">
+                  <node concept="2OqwBi" id="2yPl3bsV4Wu" role="37vLTJ">
+                    <node concept="37vLTw" id="2yPl3bsV4Wv" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2yPl3bsu$sD" resolve="c" />
+                    </node>
+                    <node concept="2OwXpG" id="2yPl3bsV4Ww" role="2OqNvi">
+                      <ref role="2Oxat5" to="z60i:~GridBagConstraints.gridy" resolve="gridy" />
+                    </node>
+                  </node>
+                  <node concept="3cmrfG" id="2yPl3bsV660" role="37vLTx">
+                    <property role="3cmrfH" value="2" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="2yPl3bsV4Wy" role="3cqZAp">
+                <node concept="2OqwBi" id="2yPl3bsV4Wz" role="3clFbG">
+                  <node concept="37vLTw" id="2yPl3bsV4W$" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2yPl3bsULE0" resolve="manipulate" />
+                  </node>
+                  <node concept="liA8E" id="2yPl3bsV4W_" role="2OqNvi">
+                    <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component,java.lang.Object):void" resolve="add" />
+                    <node concept="37vLTw" id="2yPl3bsV6hb" role="37wK5m">
+                      <ref role="3cqZAo" node="2yPl3bsQNnk" resolve="logPanel" />
+                    </node>
+                    <node concept="37vLTw" id="2yPl3bsV4WB" role="37wK5m">
+                      <ref role="3cqZAo" node="2yPl3bsu$sD" resolve="c" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="2yPl3bsV4WC" role="3cqZAp">
+                <node concept="37vLTI" id="2yPl3bsV4WD" role="3clFbG">
+                  <node concept="2OqwBi" id="2yPl3bsV4WE" role="37vLTJ">
+                    <node concept="37vLTw" id="2yPl3bsV4WF" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2yPl3bsu$sD" resolve="c" />
+                    </node>
+                    <node concept="2OwXpG" id="2yPl3bsV4WG" role="2OqNvi">
+                      <ref role="2Oxat5" to="z60i:~GridBagConstraints.gridx" resolve="gridx" />
+                    </node>
+                  </node>
+                  <node concept="3cmrfG" id="2yPl3bsV4WH" role="37vLTx">
+                    <property role="3cmrfH" value="0" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="2yPl3bsV4WI" role="3cqZAp">
+                <node concept="37vLTI" id="2yPl3bsV4WJ" role="3clFbG">
+                  <node concept="2OqwBi" id="2yPl3bsV4WK" role="37vLTJ">
+                    <node concept="37vLTw" id="2yPl3bsV4WL" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2yPl3bsu$sD" resolve="c" />
+                    </node>
+                    <node concept="2OwXpG" id="2yPl3bsV4WM" role="2OqNvi">
+                      <ref role="2Oxat5" to="z60i:~GridBagConstraints.gridy" resolve="gridy" />
+                    </node>
+                  </node>
+                  <node concept="3cmrfG" id="2yPl3bsV6bZ" role="37vLTx">
+                    <property role="3cmrfH" value="3" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="2yPl3bsV4WO" role="3cqZAp">
+                <node concept="2OqwBi" id="2yPl3bsV4WP" role="3clFbG">
+                  <node concept="liA8E" id="2yPl3bsV4WQ" role="2OqNvi">
+                    <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component,java.lang.Object):void" resolve="add" />
+                    <node concept="37vLTw" id="2yPl3bsV6nY" role="37wK5m">
+                      <ref role="3cqZAo" node="2yPl3bsRFsP" resolve="auproPanel" />
+                    </node>
+                    <node concept="37vLTw" id="2yPl3bsV4WS" role="37wK5m">
+                      <ref role="3cqZAo" node="2yPl3bsu$sD" resolve="c" />
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="2yPl3bsV4WT" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2yPl3bsULE0" resolve="manipulate" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbH" id="2yPl3bsV2rt" role="3cqZAp" />
+              <node concept="3clFbF" id="2yPl3bsUAO$" role="3cqZAp">
+                <node concept="2OqwBi" id="2yPl3bsUBN2" role="3clFbG">
+                  <node concept="37vLTw" id="2yPl3bsUAOy" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2yPl3bsUo88" resolve="tabbedPane" />
+                  </node>
+                  <node concept="liA8E" id="2yPl3bsUCt2" role="2OqNvi">
+                    <ref role="37wK5l" to="dxuu:~JTabbedPane.add(java.lang.String,java.awt.Component):java.awt.Component" resolve="add" />
+                    <node concept="Xl_RD" id="2yPl3bsUCGZ" role="37wK5m">
+                      <property role="Xl_RC" value="Manipulate" />
+                    </node>
+                    <node concept="37vLTw" id="2yPl3bsV6uA" role="37wK5m">
+                      <ref role="3cqZAo" node="2yPl3bsULE0" resolve="manipulate" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbH" id="2yPl3bsVOB2" role="3cqZAp" />
+              <node concept="3SKdUt" id="2yPl3bsVG2W" role="3cqZAp">
+                <node concept="3SKdUq" id="2yPl3bsVG2Y" role="3SKWNk">
+                  <property role="3SKdUp" value="search panel" />
+                </node>
+              </node>
+              <node concept="3clFbF" id="2yPl3bsVA4m" role="3cqZAp">
+                <node concept="37vLTI" id="2yPl3bsVB8f" role="3clFbG">
+                  <node concept="2ShNRf" id="2yPl3bsVBAX" role="37vLTx">
+                    <node concept="1pGfFk" id="2yPl3bsVCIV" role="2ShVmc">
+                      <ref role="37wK5l" to="dxuu:~JPanel.&lt;init&gt;(java.awt.LayoutManager)" resolve="JPanel" />
+                      <node concept="37vLTw" id="2yPl3bsVCNG" role="37wK5m">
+                        <ref role="3cqZAo" node="2yPl3bsuz_G" resolve="g" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="2yPl3bsVA4k" role="37vLTJ">
+                    <ref role="3cqZAo" node="2yPl3bsUOIJ" resolve="search" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="2yPl3bsVDOR" role="3cqZAp">
+                <node concept="37vLTI" id="2yPl3bsVDOS" role="3clFbG">
+                  <node concept="3cmrfG" id="2yPl3bsVDOT" role="37vLTx">
+                    <property role="3cmrfH" value="0" />
+                  </node>
+                  <node concept="2OqwBi" id="2yPl3bsVDOU" role="37vLTJ">
+                    <node concept="37vLTw" id="2yPl3bsVDOV" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2yPl3bsu$sD" resolve="c" />
+                    </node>
+                    <node concept="2OwXpG" id="2yPl3bsVDOW" role="2OqNvi">
+                      <ref role="2Oxat5" to="z60i:~GridBagConstraints.gridx" resolve="gridx" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="2yPl3bsVDOX" role="3cqZAp">
+                <node concept="37vLTI" id="2yPl3bsVDOY" role="3clFbG">
+                  <node concept="2OqwBi" id="2yPl3bsVDOZ" role="37vLTJ">
+                    <node concept="37vLTw" id="2yPl3bsVDP0" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2yPl3bsu$sD" resolve="c" />
+                    </node>
+                    <node concept="2OwXpG" id="2yPl3bsVDP1" role="2OqNvi">
+                      <ref role="2Oxat5" to="z60i:~GridBagConstraints.gridy" resolve="gridy" />
+                    </node>
+                  </node>
+                  <node concept="3cmrfG" id="2yPl3bsVDP2" role="37vLTx">
+                    <property role="3cmrfH" value="0" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="2yPl3bsVDP3" role="3cqZAp">
+                <node concept="2OqwBi" id="2yPl3bsVDP4" role="3clFbG">
+                  <node concept="37vLTw" id="2yPl3bsVM$$" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2yPl3bsUOIJ" resolve="search" />
+                  </node>
+                  <node concept="liA8E" id="2yPl3bsVDP6" role="2OqNvi">
+                    <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component,java.lang.Object):void" resolve="add" />
+                    <node concept="37vLTw" id="2yPl3bsVDP7" role="37wK5m">
+                      <ref role="3cqZAo" node="StQ5VvmUk" resolve="indexPanel" />
+                    </node>
+                    <node concept="37vLTw" id="2yPl3bsVDP8" role="37wK5m">
+                      <ref role="3cqZAo" node="2yPl3bsu$sD" resolve="c" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="2yPl3bsVDP9" role="3cqZAp">
+                <node concept="37vLTI" id="2yPl3bsVDPa" role="3clFbG">
+                  <node concept="2OqwBi" id="2yPl3bsVDPb" role="37vLTJ">
+                    <node concept="37vLTw" id="2yPl3bsVDPc" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2yPl3bsu$sD" resolve="c" />
+                    </node>
+                    <node concept="2OwXpG" id="2yPl3bsVDPd" role="2OqNvi">
+                      <ref role="2Oxat5" to="z60i:~GridBagConstraints.gridx" resolve="gridx" />
+                    </node>
+                  </node>
+                  <node concept="3cmrfG" id="2yPl3bsVDPe" role="37vLTx">
+                    <property role="3cmrfH" value="0" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="2yPl3bsVDPf" role="3cqZAp">
+                <node concept="37vLTI" id="2yPl3bsVDPg" role="3clFbG">
+                  <node concept="2OqwBi" id="2yPl3bsVDPh" role="37vLTJ">
+                    <node concept="37vLTw" id="2yPl3bsVDPi" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2yPl3bsu$sD" resolve="c" />
+                    </node>
+                    <node concept="2OwXpG" id="2yPl3bsVDPj" role="2OqNvi">
+                      <ref role="2Oxat5" to="z60i:~GridBagConstraints.gridy" resolve="gridy" />
+                    </node>
+                  </node>
+                  <node concept="3cmrfG" id="2yPl3bsVDPk" role="37vLTx">
+                    <property role="3cmrfH" value="1" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="2yPl3bsVDPl" role="3cqZAp">
+                <node concept="2OqwBi" id="2yPl3bsVDPm" role="3clFbG">
+                  <node concept="liA8E" id="2yPl3bsVDPn" role="2OqNvi">
+                    <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component,java.lang.Object):void" resolve="add" />
+                    <node concept="37vLTw" id="2yPl3bsVDPo" role="37wK5m">
+                      <ref role="3cqZAo" node="2yPl3bsPGei" resolve="jsonPanel" />
+                    </node>
+                    <node concept="37vLTw" id="2yPl3bsVDPp" role="37wK5m">
+                      <ref role="3cqZAo" node="2yPl3bsu$sD" resolve="c" />
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="2yPl3bsVMEm" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2yPl3bsUOIJ" resolve="search" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbH" id="2yPl3bsVCPS" role="3cqZAp" />
+              <node concept="3clFbF" id="2yPl3bsUE2b" role="3cqZAp">
+                <node concept="2OqwBi" id="2yPl3bsUE2c" role="3clFbG">
+                  <node concept="37vLTw" id="2yPl3bsUE2d" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2yPl3bsUo88" resolve="tabbedPane" />
+                  </node>
+                  <node concept="liA8E" id="2yPl3bsUE2e" role="2OqNvi">
+                    <ref role="37wK5l" to="dxuu:~JTabbedPane.add(java.lang.String,java.awt.Component):java.awt.Component" resolve="add" />
+                    <node concept="Xl_RD" id="2yPl3bsUE2f" role="37wK5m">
+                      <property role="Xl_RC" value="Search" />
+                    </node>
+                    <node concept="37vLTw" id="2yPl3bsV6_5" role="37wK5m">
+                      <ref role="3cqZAo" node="2yPl3bsUOIJ" resolve="search" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="1X3_iC" id="2yPl3bsVegi" role="lGtFl">
+                <property role="3V$3am" value="statement" />
+                <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                <node concept="3clFbF" id="2yPl3bsUFOX" role="8Wnug">
+                  <node concept="2OqwBi" id="2yPl3bsUFOY" role="3clFbG">
+                    <node concept="37vLTw" id="2yPl3bsUFOZ" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2yPl3bsUo88" resolve="tabbedPane" />
+                    </node>
+                    <node concept="liA8E" id="2yPl3bsUFP0" role="2OqNvi">
+                      <ref role="37wK5l" to="dxuu:~JTabbedPane.add(java.lang.String,java.awt.Component):java.awt.Component" resolve="add" />
+                      <node concept="Xl_RD" id="2yPl3bsUFP1" role="37wK5m">
+                        <property role="Xl_RC" value="Get Document" />
+                      </node>
+                      <node concept="37vLTw" id="2yPl3bsV7RK" role="37wK5m">
+                        <ref role="3cqZAo" node="2yPl3bsURQj" resolve="getDocument" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbH" id="2yPl3bsUD9S" role="3cqZAp" />
               <node concept="3clFbF" id="StQ5VvWds" role="3cqZAp">
                 <node concept="2OqwBi" id="StQ5VvWrC" role="3clFbG">
                   <node concept="37vLTw" id="StQ5VvWdq" role="2Oq$k0">
@@ -9171,47 +9625,59 @@
                   </node>
                   <node concept="liA8E" id="StQ5VvWM9" role="2OqNvi">
                     <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component):java.awt.Component" resolve="add" />
-                    <node concept="37vLTw" id="StQ5VvWRk" role="37wK5m">
-                      <ref role="3cqZAo" node="StQ5VvmUk" resolve="indexPanel" />
+                    <node concept="37vLTw" id="2yPl3bsVchF" role="37wK5m">
+                      <ref role="3cqZAo" node="2yPl3bsUo88" resolve="tabbedPane" />
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="3clFbF" id="2yPl3bsQtRg" role="3cqZAp">
-                <node concept="2OqwBi" id="2yPl3bsQumb" role="3clFbG">
-                  <node concept="37vLTw" id="2yPl3bsQtRe" role="2Oq$k0">
-                    <ref role="3cqZAo" node="StQ5VvfJJ" resolve="mainFrame" />
-                  </node>
-                  <node concept="liA8E" id="2yPl3bsQuP2" role="2OqNvi">
-                    <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component):java.awt.Component" resolve="add" />
-                    <node concept="37vLTw" id="2yPl3bsQuYc" role="37wK5m">
-                      <ref role="3cqZAo" node="2yPl3bsPGei" resolve="jsonPanel" />
+              <node concept="1X3_iC" id="2yPl3bsV7YN" role="lGtFl">
+                <property role="3V$3am" value="statement" />
+                <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                <node concept="3clFbF" id="2yPl3bsQtRg" role="8Wnug">
+                  <node concept="2OqwBi" id="2yPl3bsQumb" role="3clFbG">
+                    <node concept="37vLTw" id="2yPl3bsQtRe" role="2Oq$k0">
+                      <ref role="3cqZAo" node="StQ5VvfJJ" resolve="mainFrame" />
+                    </node>
+                    <node concept="liA8E" id="2yPl3bsQuP2" role="2OqNvi">
+                      <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component):java.awt.Component" resolve="add" />
+                      <node concept="37vLTw" id="2yPl3bsQuYc" role="37wK5m">
+                        <ref role="3cqZAo" node="2yPl3bsPGei" resolve="jsonPanel" />
+                      </node>
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="3clFbF" id="2yPl3bsRiOC" role="3cqZAp">
-                <node concept="2OqwBi" id="2yPl3bsRjsE" role="3clFbG">
-                  <node concept="37vLTw" id="2yPl3bsRiOA" role="2Oq$k0">
-                    <ref role="3cqZAo" node="StQ5VvfJJ" resolve="mainFrame" />
-                  </node>
-                  <node concept="liA8E" id="2yPl3bsRjYO" role="2OqNvi">
-                    <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component):java.awt.Component" resolve="add" />
-                    <node concept="37vLTw" id="2yPl3bsRk3Z" role="37wK5m">
-                      <ref role="3cqZAo" node="2yPl3bsQNnk" resolve="logPanel" />
+              <node concept="1X3_iC" id="2yPl3bsV96l" role="lGtFl">
+                <property role="3V$3am" value="statement" />
+                <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                <node concept="3clFbF" id="2yPl3bsRiOC" role="8Wnug">
+                  <node concept="2OqwBi" id="2yPl3bsRjsE" role="3clFbG">
+                    <node concept="37vLTw" id="2yPl3bsRiOA" role="2Oq$k0">
+                      <ref role="3cqZAo" node="StQ5VvfJJ" resolve="mainFrame" />
+                    </node>
+                    <node concept="liA8E" id="2yPl3bsRjYO" role="2OqNvi">
+                      <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component):java.awt.Component" resolve="add" />
+                      <node concept="37vLTw" id="2yPl3bsRk3Z" role="37wK5m">
+                        <ref role="3cqZAo" node="2yPl3bsQNnk" resolve="logPanel" />
+                      </node>
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="3clFbF" id="2yPl3bsTpGs" role="3cqZAp">
-                <node concept="2OqwBi" id="2yPl3bsTqBh" role="3clFbG">
-                  <node concept="37vLTw" id="2yPl3bsTpGq" role="2Oq$k0">
-                    <ref role="3cqZAo" node="StQ5VvfJJ" resolve="mainFrame" />
-                  </node>
-                  <node concept="liA8E" id="2yPl3bsTrfz" role="2OqNvi">
-                    <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component):java.awt.Component" resolve="add" />
-                    <node concept="37vLTw" id="2yPl3bsTroH" role="37wK5m">
-                      <ref role="3cqZAo" node="2yPl3bsRFsP" resolve="auproPanel" />
+              <node concept="1X3_iC" id="2yPl3bsVaaT" role="lGtFl">
+                <property role="3V$3am" value="statement" />
+                <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                <node concept="3clFbF" id="2yPl3bsTpGs" role="8Wnug">
+                  <node concept="2OqwBi" id="2yPl3bsTqBh" role="3clFbG">
+                    <node concept="37vLTw" id="2yPl3bsTpGq" role="2Oq$k0">
+                      <ref role="3cqZAo" node="StQ5VvfJJ" resolve="mainFrame" />
+                    </node>
+                    <node concept="liA8E" id="2yPl3bsTrfz" role="2OqNvi">
+                      <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component):java.awt.Component" resolve="add" />
+                      <node concept="37vLTw" id="2yPl3bsTroH" role="37wK5m">
+                        <ref role="3cqZAo" node="2yPl3bsRFsP" resolve="auproPanel" />
+                      </node>
                     </node>
                   </node>
                 </node>

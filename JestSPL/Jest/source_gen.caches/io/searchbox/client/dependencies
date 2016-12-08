@@ -124,7 +124,6 @@
     <classNode dependClassName="java.awt.FlowLayout" />
     <classNode dependClassName="java.awt.GridBagConstraints" />
     <classNode dependClassName="java.awt.GridBagLayout" />
-    <classNode dependClassName="java.awt.GridLayout" />
     <classNode dependClassName="java.awt.event.WindowAdapter" />
     <classNode dependClassName="java.awt.event.WindowEvent" />
     <classNode dependClassName="java.lang.String" />
@@ -133,6 +132,7 @@
     <classNode dependClassName="javax.swing.JFrame" />
     <classNode dependClassName="javax.swing.JLabel" />
     <classNode dependClassName="javax.swing.JPanel" />
+    <classNode dependClassName="javax.swing.JTabbedPane" />
     <classNode dependClassName="javax.swing.JTextField" />
   </dependency>
 </dependenciesRoot>
