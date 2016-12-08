@@ -4,26 +4,50 @@ package io.searchbox.client;
 
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JPanel;
 import javax.swing.JTextField;
+import javax.swing.JPanel;
+import javax.swing.JButton;
 import java.awt.GridBagLayout;
+import java.awt.FlowLayout;
 import java.awt.GridBagConstraints;
 import java.awt.GridLayout;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-import java.awt.Component;
-import java.awt.Color;
-import java.awt.FlowLayout;
+import java.awt.Dimension;
 
 public class UserInterface {
 
   private JFrame mainFrame;
-  private JLabel indexLable;
-  private JLabel statusLable;
-  private JPanel controlPanel;
-  private JLabel msglabel;
+  private JLabel indexLabel;
   private JTextField indexField;
+  private JPanel indexPanel;
+
+  private JLabel jsonLabel;
+  private JTextField jsonField;
+  private JPanel jsonPanel;
+  private JPanel buttonPanel;
+  private JButton create;
+  private JButton update;
+  private JButton delete;
+
+  private JLabel logLabel;
+  private JTextField logField;
+  private JPanel logPanel;
+
+  private JLabel authentication;
+  private JLabel username;
+  private JLabel password;
+  private JLabel proxy;
+  private JTextField usernamef;
+  private JTextField passwordf;
+  private JTextField proxyf;
+  private JPanel authenPanel;
+  private JPanel proxyPanel;
+  private JPanel auproPanel;
+
+
   private GridBagLayout g;
+  private FlowLayout f;
   private GridBagConstraints c;
 
   public UserInterface() {
@@ -36,46 +60,134 @@ public class UserInterface {
 
   private void prepareGUI() {
     mainFrame = new JFrame("Jest Client");
-    mainFrame.setSize(400, 400);
-    mainFrame.setLayout(new GridLayout(3, 1));
+    mainFrame.setSize(510, 700);
+    mainFrame.setLayout(new GridLayout(4, 1, 1, 1));
     mainFrame.addWindowListener(new WindowAdapter() {
       public void windowClosing(WindowEvent windowEvent) {
         System.exit(0);
       }
     });
 
-    controlPanel = new JPanel();
+    // index panel 
+    indexPanel = new JPanel();
     g = new GridBagLayout();
     c = new GridBagConstraints();
 
-    controlPanel.setLayout(g);
-    indexLable = new JLabel("Index", JLabel.LEFT);
+    indexPanel.setLayout(g);
+    indexLabel = new JLabel("Index");
     c.gridx = 0;
     c.gridy = 0;
-    controlPanel.add(indexLable, c);
+    indexPanel.add(indexLabel, c);
 
-    indexField = new JTextField(40);
-    indexField.setHorizontalAlignment(JTextField.LEFT);
+    indexField = new JTextField();
+    indexField.setPreferredSize(new Dimension(500, 25));
     c.gridx = 0;
     c.gridy = 1;
-    controlPanel.add(indexField, c);
+    indexPanel.add(indexField, c);
 
+    // JSON panel 
+    jsonPanel = new JPanel();
+    buttonPanel = new JPanel();
+    jsonPanel.setLayout(g);
 
-    controlPanel.setAlignmentX(Component.LEFT_ALIGNMENT);
-    mainFrame.add(controlPanel);
+    jsonLabel = new JLabel("JSON String");
+    c.gridx = 0;
+    c.gridy = 0;
+    jsonPanel.add(jsonLabel, c);
+
+    jsonField = new JTextField();
+    jsonField.setPreferredSize(new Dimension(500, 100));
+    c.gridx = 0;
+    c.gridy = 1;
+    jsonPanel.add(jsonField, c);
+
+    create = new JButton("Create");
+    update = new JButton("Update");
+    delete = new JButton("Delete");
+
+    f = new FlowLayout();
+    buttonPanel.setLayout(f);
+    buttonPanel.add(create);
+    buttonPanel.add(update);
+    buttonPanel.add(delete);
+    c.gridx = 0;
+    c.gridy = 2;
+    jsonPanel.add(buttonPanel, c);
+
+    // Log panel 
+    logPanel = new JPanel();
+    logPanel.setLayout(g);
+
+    logLabel = new JLabel("Log");
+    c.gridx = 0;
+    c.gridy = 0;
+    logPanel.add(logLabel, c);
+
+    logField = new JTextField();
+    logField.setPreferredSize(new Dimension(500, 100));
+    c.gridx = 0;
+    c.gridy = 1;
+    logPanel.add(logField, c);
+
+    // Authentication panel 
+    authenPanel = new JPanel();
+    authenPanel.setLayout(g);
+
+    authentication = new JLabel("Authentication");
+    c.gridx = 0;
+    c.gridy = 0;
+    authenPanel.add(authentication, c);
+
+    username = new JLabel("Username");
+    c.gridx = 0;
+    c.gridy = 1;
+    authenPanel.add(username, c);
+
+    usernamef = new JTextField(13);
+    c.gridx = 1;
+    c.gridy = 1;
+    authenPanel.add(usernamef, c);
+
+    password = new JLabel("Passowrd");
+    c.gridx = 0;
+    c.gridy = 2;
+    authenPanel.add(password, c);
+
+    passwordf = new JTextField(13);
+    c.gridx = 1;
+    c.gridy = 2;
+    authenPanel.add(passwordf, c);
+
+    // Proxy panel  
+    proxyPanel = new JPanel(g);
+
+    proxy = new JLabel("Proxy");
+    c.gridx = 0;
+    c.gridy = 0;
+    proxyPanel.add(proxy, c);
+
+    proxyf = new JTextField(17);
+    c.gridx = 0;
+    c.gridy = 1;
+    proxyPanel.add(proxyf, c);
+
+    // Authentication and Proxy panel, putting the two subpanels into one big panel 
+    auproPanel = new JPanel(g);
+
+    c.gridx = 0;
+    c.gridy = 0;
+    auproPanel.add(authenPanel, c);
+    c.gridx = 1;
+    c.gridy = 0;
+    auproPanel.add(proxyPanel, c);
+
+    mainFrame.add(indexPanel);
+    mainFrame.add(jsonPanel);
+    mainFrame.add(logPanel);
+    mainFrame.add(auproPanel);
     mainFrame.setVisible(true);
 
   }
 
-  private void showJPanelDemo() {
-    indexLable.setText("Index");
-    indexLable.setSize(400, 200);
-    JPanel panel = new JPanel();
-    panel.setBackground(Color.magenta);
-    panel.setLayout(new FlowLayout());
-    panel.add(msglabel);
 
-    controlPanel.add(panel);
-    mainFrame.setVisible(true);
-  }
 }
