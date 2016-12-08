@@ -17,6 +17,81 @@
   <concept fqn="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.ThrowStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
+  <root nodeRef="r:51721a43-bbd1-4edc-af1d-75408a5d4a04(io.searchbox.client)/15893859263101303">
+    <file name="UserInterface.java">
+      <node id="15893859263118319" at="20,0,21,0" concept="4" trace="mainFrame" />
+      <node id="15893859263145949" at="21,0,22,0" concept="4" trace="indexLable" />
+      <node id="15893859263146816" at="22,0,23,0" concept="4" trace="statusLable" />
+      <node id="15893859263147668" at="23,0,24,0" concept="4" trace="controlPanel" />
+      <node id="15893859263148554" at="24,0,25,0" concept="4" trace="msglabel" />
+      <node id="2933343309724465520" at="25,0,26,0" concept="4" trace="indexField" />
+      <node id="2933343309725841772" at="26,0,27,0" concept="4" trace="g" />
+      <node id="2933343309725845289" at="27,0,28,0" concept="4" trace="c" />
+      <node id="15893859263358516" at="29,26,30,17" concept="3" />
+      <node id="15893859263149036" at="33,42,34,54" concept="9" />
+      <node id="15893859263198403" at="37,29,38,42" concept="3" />
+      <node id="15893859263202237" at="38,42,39,32" concept="3" />
+      <node id="15893859263211107" at="39,32,40,46" concept="3" />
+      <node id="15893859263245003" at="42,58,43,23" concept="3" />
+      <node id="2933343309725855618" at="45,7,46,0" concept="12" />
+      <node id="15893859263279288" at="46,0,47,32" concept="3" />
+      <node id="2933343309726200765" at="47,32,48,28" concept="3" />
+      <node id="2933343309726209079" at="48,28,49,33" concept="3" />
+      <node id="2933343309726215928" at="49,33,50,0" concept="12" />
+      <node id="2933343309726868598" at="50,0,51,30" concept="3" />
+      <node id="15893859263246999" at="51,30,52,50" concept="3" />
+      <node id="2933343309725847939" at="52,50,53,16" concept="3" />
+      <node id="2933343309725851988" at="53,16,54,16" concept="3" />
+      <node id="2933343309725504899" at="54,16,55,36" concept="3" />
+      <node id="2933343309725858342" at="55,36,56,0" concept="12" />
+      <node id="2933343309724470076" at="56,0,57,36" concept="3" />
+      <node id="2933343309727200798" at="57,36,58,55" concept="3" />
+      <node id="2933343309725863237" at="58,55,59,16" concept="3" />
+      <node id="2933343309725867410" at="59,16,60,16" concept="3" />
+      <node id="2933343309725872321" at="60,16,61,36" concept="3" />
+      <node id="15893859263267633" at="61,36,62,0" concept="12" />
+      <node id="15893859263277934" at="62,0,63,0" concept="12" />
+      <node id="2933343309728186553" at="63,0,64,57" concept="3" />
+      <node id="15893859263300444" at="64,57,65,32" concept="3" />
+      <node id="15893859263309265" at="65,32,66,31" concept="3" />
+      <node id="15893859263307238" at="66,31,67,0" concept="12" />
+      <node id="15893859263322301" at="70,33,71,32" concept="3" />
+      <node id="2933343309724453469" at="71,32,72,33" concept="3" />
+      <node id="15893859263326529" at="72,33,73,32" concept="9" />
+      <node id="15893859263336615" at="73,32,74,39" concept="3" />
+      <node id="15893859263339986" at="74,39,75,38" concept="3" />
+      <node id="15893859263347698" at="75,38,76,24" concept="3" />
+      <node id="15893859263349736" at="76,24,77,0" concept="12" />
+      <node id="15893859263350608" at="77,0,78,28" concept="3" />
+      <node id="15893859263354127" at="78,28,79,31" concept="3" />
+      <node id="15893859263108924" at="29,0,32,0" concept="2" trace="UserInterface#()V" />
+      <node id="15893859263113250" at="33,0,36,0" concept="14" trace="main#([Ljava/lang/String;)V" />
+      <node id="15893859263242966" at="42,0,45,0" concept="8" trace="windowClosing#(Ljava/awt/event/WindowEvent;)V" />
+      <node id="15893859263224167" at="40,46,45,7" concept="3" />
+      <node id="15893859263316258" at="70,0,81,0" concept="8" trace="showJPanelDemo#()V" />
+      <node id="15893859263193739" at="37,0,69,0" concept="8" trace="prepareGUI#()V" />
+      <scope id="15893859263108927" at="29,26,30,17" />
+      <scope id="15893859263113256" at="33,42,34,54">
+        <var name="userInterface" id="15893859263149037" />
+      </scope>
+      <scope id="15893859263242969" at="42,58,43,23" />
+      <scope id="15893859263108924" at="29,0,32,0" />
+      <scope id="15893859263113250" at="33,0,36,0">
+        <var name="args" id="15893859263113251" />
+      </scope>
+      <scope id="15893859263242966" at="42,0,45,0">
+        <var name="windowEvent" id="15893859263243442" />
+      </scope>
+      <scope id="15893859263316261" at="70,33,79,31">
+        <var name="panel" id="15893859263326530" />
+      </scope>
+      <scope id="15893859263316258" at="70,0,81,0" />
+      <scope id="15893859263193742" at="37,29,67,0" />
+      <scope id="15893859263193739" at="37,0,69,0" />
+      <unit id="15893859263241889" at="41,36,45,5" name="io.searchbox.client.UserInterface$1" />
+      <unit id="15893859263101303" at="18,0,82,0" name="io.searchbox.client.UserInterface" />
+    </file>
+  </root>
   <root nodeRef="r:51721a43-bbd1-4edc-af1d-75408a5d4a04(io.searchbox.client)/8423122693117674852">
     <file name="JestResultHandler.java">
       <node id="8423122693117674855" at="10,0,11,0" concept="8" trace="completed#(null)V" />
